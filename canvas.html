@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Canvas</title>
+<style>
+#desenho {
+	border: 1px solid #000;
+/*	background-color:#0ff;
+	width: 600px;
+	height:600px;*/
+}
+
+</style>
+</head>
+<body>
+<canvas id="desenho" width="600" height="600"></canvas>
+<input type="button" id="botao" value="mostra">
+
+<script type="text/javascript">
+var elCanvas=document.getElementById("desenho");
+var ctx=elCanvas.getContext("2d");
+if (ctx) {
+	// preencher todo o canvas com uma cor
+	ctx.fillRect(0,0,ctx.canvas.width,ctx.canvas.height);
+	//desenhar um rectangulo
+	ctx.fillStyle="yellow";
+	ctx.strokeStyle="red";
+	ctx.lineWidth=10;
+	ctx.fillRect(100,100,50,50);
+	ctx.strokeRect(95,95,60,60);
+	ctx.fillStyle="blue";
+	ctx.fillRect(100,300,50,50);
+	//desenhar um circulo
+	ctx.lineWidth=2;
+	ctx.beginPath();
+	ctx.arc(200,250,50,0,2*Math.PI);
+	// ctx.arc(200,250,50,Math.PI,2*Math.PI,true);
+	ctx.stroke();
+	ctx.fill();
+	// desenhar uma linha
+	ctx.strokeStyle="white";
+	ctx.lineWidth=2;
+	ctx.beginPath();
+	ctx.moveTo(300,100);
+	ctx.lineTo(300,250);
+	ctx.stroke();
+	// colocar imagens
+	var foto=new Image();
+	foto.onload=function() {
+		ctx.drawImage(foto,100,100,200,150);
+	}
+	foto.src="images/footer_submit_button.gif";
+	
+} else {
+	alert("Ocorreu um erro!");
+}
+function circle(cx,cy,r,pi,pf,lw,ls,lf) {
+	ctx.fillStyle=lf;
+	ctx.strokeStyle=ls;
+	ctx.lineWidth=lw;
+	ctx.beginPath();
+	ctx.arc(cx,cy,r,pi,pf);
+	ctx.stroke();
+	ctx.fill();
+}
+document.getElementById("botao").onclick=function() {
+circle(400,400,100,Math.PI,2*Math.PI,5,"yellow","cyan")
+}
+
+</script>
+</body>
+</html>
