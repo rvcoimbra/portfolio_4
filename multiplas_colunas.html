@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Múltiplas colunas</title>
+<style>
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+div {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	background-color: #CCC;
+}
+
+#colunas1 {
+	width: 800px;
+	-webkit-column-count: 3;
+	-moz-column-count: 3;	
+	column-count: 3;
+}
+
+#colunas2 {
+	width: 800px;
+	-webkit-column-width: 300px;
+	-moz-column-width: 300px;	
+	column-width: 300px;
+}
+
+#colunas3 {
+	width: 800px;
+	-webkit-column-width: 300px;
+	-moz-column-width: 300px;	
+	column-width: 300px;
+}
+#colunas3 p {
+	text-align: justify;
+	margin-bottom: 0;
+	margin-top:0;
+	text-indent: 1.5em;
+}
+
+#colunas4 {
+	width: 800px;
+	-webkit-column-count: 4;
+	-moz-column-count: 4;	
+	column-count: 4;
+	-webkit-column-width: 100px;
+	-moz-column-width: 100px;	
+	column-width: 100px;
+/*	-webkit-columns: 100px 4;
+	columns: 100px 4;*/
+}
+#colunas4 p {
+	text-align: justify;
+	margin-bottom: 0;
+	margin-top:0;	
+}
+
+#colunas5 {
+	width: 800px;
+	height: 300px;
+	-webkit-column-count: 3;
+	-moz-column-count: 3;	
+	column-count: 3;
+}
+#colunas5 p {
+	text-align: justify;
+	margin-bottom: 0;
+	margin-top:0;	
+}
+
+#colunas6 {
+	width: 800px;
+	/* propriedades alternativas */
+/*	-webkit-column-rule-color: black;
+	-webkit-column-rule-style: solid;
+	-webkit-column-rule-width: 1px;	
+	-moz-column-rule-color: black;
+	-moz-column-rule-style: solid;
+	-moz-column-rule-width: 1px;		
+	column-rule-color: black;
+	column-rule-style: solid;
+	column-rule-width: 1px; */
+	-webkit-column-rule: black dotted 1px;
+	-moz-column-rule: black dotted 1px;	
+	column-rule: black dotted 1px;
+	-webkit-column-gap: 2em;
+	-moz-column-gap: 2em;	
+	column-gap: 2em;
+	-webkit-column-count: 3;
+	-moz-column-count: 3;	
+	column-count: 3;
+}
+#colunas6 p {
+	text-align: justify;
+	margin-bottom: 0;
+	margin-top:0;	
+}
+
+#colunas7 {
+	width: 800px;
+	-webkit-column-rule: black dotted 1px;
+	-moz-column-rule: black dotted 1px;	
+	column-rule: black dotted 1px;
+	-webkit-column-gap: 2em;
+	-moz-column-gap: 2em;	
+	column-gap: 2em;
+	-webkit-column-count: 3;
+	-moz-column-count: 3;	
+	column-count: 3;
+}
+#colunas7 p {
+	text-align: justify;
+	margin-bottom: 0;
+	margin-top:0;	
+}
+
+</style>
+</head>
+
+<body>
+<h1>Propriedade <code>column-count</code> igual a 3</h1>
+<div id="colunas1">
+<h1>Capítulo 1</h1>
+<p>Domingos José Correia Botelho de Mesquita e Meneses, fidalgo de linhagem e um dos mais antigos solarengos de Vila-Real de Trás-os-Montes, era em 1779, juiz de fora de Cascais, e nesse mesmo ano casara com uma dama do paço, D. Rita Teresa Margarida Preciosa da Veiga Caldeirão Castelo Branco, filha dum capitão de cavalos, neta de outro Antônio de AzevedoCastelo Branco Pereira da Silva, tem notável por sua jerarquia, como por um, naquele tempo, precioso livro acerca da Arte de Guerra.</p>
+<p>Dez anos de enamorado, mal sucedido, consumira em Lisboa o bacharel provinciano. Para fazer-se amar da formosa dama de D. Maria I minguavam-lhe dotes físicos: Domingos Botelho era extremamente feio. Para se inculcar como partido conveniente a uma filha segunda, faltavam-lhe bens de fortuna: os haveres dele não excediam a trinta mil cruzados em propriedades no Douro. Os dotes de espírito não o recomendavam também: era alcançadíssimo de inteligência, e granjeara entre os seus condiscípulos da Universidade o epíteto de "brocas", com que ainda hoje os seus descendentes em Vila-Real são conhecidos. Bem ou mal derivado, o epíteto Brocas vem de broa. Entenderam os acadêmicos que a rudeza do seu condiscípulo procedia de muito pão de milho que ele digeria na sua terra.</p>
+<p>Domingos Botelho devia ter uma vocação qualquer, e tinha: era excelente flautista; foi a primeira flauta do seu tempo; e a tocar flauta se sustentou dois anos em Coimbra, durante os quais seu pai lhe suspendeu as mesadas, porque os rendimentos da casa não bastavam a livrar outro filho de um crime de morte.</p>
+<p>Formara-se Domingos Botelho em 1767, e fora a Lisboa ler no Desembargo do Paço, iniciação banal dos que aspiravam à carreira da magistratura. Já Fernão Botelho, pai do bacharel, fora bem aceite em Lisboa, e mormente ao duque de Aveiro, cuja estima lhe teve a cabeça em risco, na tentativa regicida de 1758. O provinciano saiu das masmorras da Junqueira ilibado da infamante nódoa, e até benquisto do conde de Oeiras, porque tomara parte na prova que este fizera do primor de sua geneologia sobre a dos Pintos Coelhos, do Bomjardim do Porto: pleito ridículo, mas estrondoso, movido pela recusa que o fidalgo portuense fizera de sua filha ao filho de Sebastião José de Carvalho.</p>
+</div>
+
+<hr>
+
+<h1>Propriedade <code>column-width</code> igual a 300px</h1>
+<div id="colunas2">
+<h1>Capítulo 1</h1>
+<p>Domingos José Correia Botelho de Mesquita e Meneses, fidalgo de linhagem e um dos mais antigos solarengos de Vila-Real de Trás-os-Montes, era em 1779, juiz de fora de Cascais, e nesse mesmo ano casara com uma dama do paço, D. Rita Teresa Margarida Preciosa da Veiga Caldeirão Castelo Branco, filha dum capitão de cavalos, neta de outro Antônio de AzevedoCastelo Branco Pereira da Silva, tem notável por sua jerarquia, como por um, naquele tempo, precioso livro acerca da Arte de Guerra.</p>
+<p>Dez anos de enamorado, mal sucedido, consumira em Lisboa o bacharel provinciano. Para fazer-se amar da formosa dama de D. Maria I minguavam-lhe dotes físicos: Domingos Botelho era extremamente feio. Para se inculcar como partido conveniente a uma filha segunda, faltavam-lhe bens de fortuna: os haveres dele não excediam a trinta mil cruzados em propriedades no Douro. Os dotes de espírito não o recomendavam também: era alcançadíssimo de inteligência, e granjeara entre os seus condiscípulos da Universidade o epíteto de "brocas", com que ainda hoje os seus descendentes em Vila-Real são conhecidos. Bem ou mal derivado, o epíteto Brocas vem de broa. Entenderam os acadêmicos que a rudeza do seu condiscípulo procedia de muito pão de milho que ele digeria na sua terra.</p>
+<p>Domingos Botelho devia ter uma vocação qualquer, e tinha: era excelente flautista; foi a primeira flauta do seu tempo; e a tocar flauta se sustentou dois anos em Coimbra, durante os quais seu pai lhe suspendeu as mesadas, porque os rendimentos da casa não bastavam a livrar outro filho de um crime de morte.</p>
+<p>Formara-se Domingos Botelho em 1767, e fora a Lisboa ler no Desembargo do Paço, iniciação banal dos que aspiravam à carreira da magistratura. Já Fernão Botelho, pai do bacharel, fora bem aceite em Lisboa, e mormente ao duque de Aveiro, cuja estima lhe teve a cabeça em risco, na tentativa regicida de 1758. O provinciano saiu das masmorras da Junqueira ilibado da infamante nódoa, e até benquisto do conde de Oeiras, porque tomara parte na prova que este fizera do primor de sua geneologia sobre a dos Pintos Coelhos, do Bomjardim do Porto: pleito ridículo, mas estrondoso, movido pela recusa que o fidalgo portuense fizera de sua filha ao filho de Sebastião José de Carvalho.</p>
+</div>
+
+<hr>
+<h1>Texto justificado, primeira linha dos parágrafos indentada e remoção de margem entre parágrafos</h1>
+<div id="colunas3">
+<h1>Capítulo 1</h1>
+<p>Domingos José Correia Botelho de Mesquita e Meneses, fidalgo de linhagem e um dos mais antigos solarengos de Vila-Real de Trás-os-Montes, era em 1779, juiz de fora de Cascais, e nesse mesmo ano casara com uma dama do paço, D. Rita Teresa Margarida Preciosa da Veiga Caldeirão Castelo Branco, filha dum capitão de cavalos, neta de outro Antônio de AzevedoCastelo Branco Pereira da Silva, tem notável por sua jerarquia, como por um, naquele tempo, precioso livro acerca da Arte de Guerra.</p>
+<p>Dez anos de enamorado, mal sucedido, consumira em Lisboa o bacharel provinciano. Para fazer-se amar da formosa dama de D. Maria I minguavam-lhe dotes físicos: Domingos Botelho era extremamente feio. Para se inculcar como partido conveniente a uma filha segunda, faltavam-lhe bens de fortuna: os haveres dele não excediam a trinta mil cruzados em propriedades no Douro. Os dotes de espírito não o recomendavam também: era alcançadíssimo de inteligência, e granjeara entre os seus condiscípulos da Universidade o epíteto de "brocas", com que ainda hoje os seus descendentes em Vila-Real são conhecidos. Bem ou mal derivado, o epíteto Brocas vem de broa. Entenderam os acadêmicos que a rudeza do seu condiscípulo procedia de muito pão de milho que ele digeria na sua terra.</p>
+<p>Domingos Botelho devia ter uma vocação qualquer, e tinha: era excelente flautista; foi a primeira flauta do seu tempo; e a tocar flauta se sustentou dois anos em Coimbra, durante os quais seu pai lhe suspendeu as mesadas, porque os rendimentos da casa não bastavam a livrar outro filho de um crime de morte.</p>
+<p>Formara-se Domingos Botelho em 1767, e fora a Lisboa ler no Desembargo do Paço, iniciação banal dos que aspiravam à carreira da magistratura. Já Fernão Botelho, pai do bacharel, fora bem aceite em Lisboa, e mormente ao duque de Aveiro, cuja estima lhe teve a cabeça em risco, na tentativa regicida de 1758. O provinciano saiu das masmorras da Junqueira ilibado da infamante nódoa, e até benquisto do conde de Oeiras, porque tomara parte na prova que este fizera do primor de sua geneologia sobre a dos Pintos Coelhos, do Bomjardim do Porto: pleito ridículo, mas estrondoso, movido pela recusa que o fidalgo portuense fizera de sua filha ao filho de Sebastião José de Carvalho.</p>
+</div>
+
+<hr>
+<h1>Propriedades <code>column-count</code> e <code>column-width</code> em conjunto</h1>
+<div id="colunas4">
+<h1>Capítulo 1</h1>
+<p>Domingos José Correia Botelho de Mesquita e Meneses, fidalgo de linhagem e um dos mais antigos solarengos de Vila-Real de Trás-os-Montes, era em 1779, juiz de fora de Cascais, e nesse mesmo ano casara com uma dama do paço, D. Rita Teresa Margarida Preciosa da Veiga Caldeirão Castelo Branco, filha dum capitão de cavalos, neta de outro Antônio de AzevedoCastelo Branco Pereira da Silva, tem notável por sua jerarquia, como por um, naquele tempo, precioso livro acerca da Arte de Guerra.</p>
+<p>Dez anos de enamorado, mal sucedido, consumira em Lisboa o bacharel provinciano. Para fazer-se amar da formosa dama de D. Maria I minguavam-lhe dotes físicos: Domingos Botelho era extremamente feio. Para se inculcar como partido conveniente a uma filha segunda, faltavam-lhe bens de fortuna: os haveres dele não excediam a trinta mil cruzados em propriedades no Douro. Os dotes de espírito não o recomendavam também: era alcançadíssimo de inteligência, e granjeara entre os seus condiscípulos da Universidade o epíteto de "brocas", com que ainda hoje os seus descendentes em Vila-Real são conhecidos. Bem ou mal derivado, o epíteto Brocas vem de broa. Entenderam os acadêmicos que a rudeza do seu condiscípulo procedia de muito pão de milho que ele digeria na sua terra.</p>
+<p>Domingos Botelho devia ter uma vocação qualquer, e tinha: era excelente flautista; foi a primeira flauta do seu tempo; e a tocar flauta se sustentou dois anos em Coimbra, durante os quais seu pai lhe suspendeu as mesadas, porque os rendimentos da casa não bastavam a livrar outro filho de um crime de morte.</p>
+<p>Formara-se Domingos Botelho em 1767, e fora a Lisboa ler no Desembargo do Paço, iniciação banal dos que aspiravam à carreira da magistratura. Já Fernão Botelho, pai do bacharel, fora bem aceite em Lisboa, e mormente ao duque de Aveiro, cuja estima lhe teve a cabeça em risco, na tentativa regicida de 1758. O provinciano saiu das masmorras da Junqueira ilibado da infamante nódoa, e até benquisto do conde de Oeiras, porque tomara parte na prova que este fizera do primor de sua geneologia sobre a dos Pintos Coelhos, do Bomjardim do Porto: pleito ridículo, mas estrondoso, movido pela recusa que o fidalgo portuense fizera de sua filha ao filho de Sebastião José de Carvalho.</p>
+</div>
+
+<hr>
+<h1>Definir a altura do elemento parente</h1>
+<div id="colunas5">
+<h1>Capítulo 1</h1>
+<p>Domingos José Correia Botelho de Mesquita e Meneses, fidalgo de linhagem e um dos mais antigos solarengos de Vila-Real de Trás-os-Montes, era em 1779, juiz de fora de Cascais, e nesse mesmo ano casara com uma dama do paço, D. Rita Teresa Margarida Preciosa da Veiga Caldeirão Castelo Branco, filha dum capitão de cavalos, neta de outro Antônio de AzevedoCastelo Branco Pereira da Silva, tem notável por sua jerarquia, como por um, naquele tempo, precioso livro acerca da Arte de Guerra.</p>
+<p>Dez anos de enamorado, mal sucedido, consumira em Lisboa o bacharel provinciano. Para fazer-se amar da formosa dama de D. Maria I minguavam-lhe dotes físicos: Domingos Botelho era extremamente feio. Para se inculcar como partido conveniente a uma filha segunda, faltavam-lhe bens de fortuna: os haveres dele não excediam a trinta mil cruzados em propriedades no Douro. Os dotes de espírito não o recomendavam também: era alcançadíssimo de inteligência, e granjeara entre os seus condiscípulos da Universidade o epíteto de "brocas", com que ainda hoje os seus descendentes em Vila-Real são conhecidos. Bem ou mal derivado, o epíteto Brocas vem de broa. Entenderam os acadêmicos que a rudeza do seu condiscípulo procedia de muito pão de milho que ele digeria na sua terra.</p>
+<p>Domingos Botelho devia ter uma vocação qualquer, e tinha: era excelente flautista; foi a primeira flauta do seu tempo; e a tocar flauta se sustentou dois anos em Coimbra, durante os quais seu pai lhe suspendeu as mesadas, porque os rendimentos da casa não bastavam a livrar outro filho de um crime de morte.</p>
+<p>Formara-se Domingos Botelho em 1767, e fora a Lisboa ler no Desembargo do Paço, iniciação banal dos que aspiravam à carreira da magistratura. Já Fernão Botelho, pai do bacharel, fora bem aceite em Lisboa, e mormente ao duque de Aveiro, cuja estima lhe teve a cabeça em risco, na tentativa regicida de 1758. O provinciano saiu das masmorras da Junqueira ilibado da infamante nódoa, e até benquisto do conde de Oeiras, porque tomara parte na prova que este fizera do primor de sua geneologia sobre a dos Pintos Coelhos, do Bomjardim do Porto: pleito ridículo, mas estrondoso, movido pela recusa que o fidalgo portuense fizera de sua filha ao filho de Sebastião José de Carvalho.</p>
+</div>
+
+<hr>
+<h1>Espaço entre colunas e separadores</h1>
+<div id="colunas6">
+<h1>Capítulo 1</h1>
+<p>Domingos José Correia Botelho de Mesquita e Meneses, fidalgo de linhagem e um dos mais antigos solarengos de Vila-Real de Trás-os-Montes, era em 1779, juiz de fora de Cascais, e nesse mesmo ano casara com uma dama do paço, D. Rita Teresa Margarida Preciosa da Veiga Caldeirão Castelo Branco, filha dum capitão de cavalos, neta de outro Antônio de AzevedoCastelo Branco Pereira da Silva, tem notável por sua jerarquia, como por um, naquele tempo, precioso livro acerca da Arte de Guerra.</p>
+<p>Dez anos de enamorado, mal sucedido, consumira em Lisboa o bacharel provinciano. Para fazer-se amar da formosa dama de D. Maria I minguavam-lhe dotes físicos: Domingos Botelho era extremamente feio. Para se inculcar como partido conveniente a uma filha segunda, faltavam-lhe bens de fortuna: os haveres dele não excediam a trinta mil cruzados em propriedades no Douro. Os dotes de espírito não o recomendavam também: era alcançadíssimo de inteligência, e granjeara entre os seus condiscípulos da Universidade o epíteto de "brocas", com que ainda hoje os seus descendentes em Vila-Real são conhecidos. Bem ou mal derivado, o epíteto Brocas vem de broa. Entenderam os acadêmicos que a rudeza do seu condiscípulo procedia de muito pão de milho que ele digeria na sua terra.</p>
+<p>Domingos Botelho devia ter uma vocação qualquer, e tinha: era excelente flautista; foi a primeira flauta do seu tempo; e a tocar flauta se sustentou dois anos em Coimbra, durante os quais seu pai lhe suspendeu as mesadas, porque os rendimentos da casa não bastavam a livrar outro filho de um crime de morte.</p>
+<p>Formara-se Domingos Botelho em 1767, e fora a Lisboa ler no Desembargo do Paço, iniciação banal dos que aspiravam à carreira da magistratura. Já Fernão Botelho, pai do bacharel, fora bem aceite em Lisboa, e mormente ao duque de Aveiro, cuja estima lhe teve a cabeça em risco, na tentativa regicida de 1758. O provinciano saiu das masmorras da Junqueira ilibado da infamante nódoa, e até benquisto do conde de Oeiras, porque tomara parte na prova que este fizera do primor de sua geneologia sobre a dos Pintos Coelhos, do Bomjardim do Porto: pleito ridículo, mas estrondoso, movido pela recusa que o fidalgo portuense fizera de sua filha ao filho de Sebastião José de Carvalho.</p>
+</div>
+
+<hr>
+<h1>Utilização de imagens</h1>
+<div id="colunas7">
+<h1>Capítulo 1</h1>
+<p>Domingos José Correia Botelho de Mesquita e Meneses, fidalgo de linhagem e um dos mais antigos solarengos de Vila-Real de Trás-os-Montes, era em 1779, juiz de fora de Cascais, e nesse mesmo ano casara com uma dama do paço, D. Rita Teresa Margarida Preciosa da Veiga Caldeirão Castelo Branco, filha dum capitão de cavalos, neta de outro Antônio de AzevedoCastelo Branco Pereira da Silva, tem notável por sua jerarquia, como por um, naquele tempo, precioso livro acerca da Arte de Guerra.</p>
+<p>Dez anos de enamorado, mal sucedido, consumira em Lisboa o bacharel provinciano. Para fazer-se amar da formosa dama de D. Maria I minguavam-lhe dotes físicos: Domingos Botelho era extremamente feio. Para se inculcar como partido conveniente a uma filha segunda, faltavam-lhe bens de fortuna: os haveres dele não excediam a trinta mil cruzados em propriedades no Douro. Os dotes de espírito não o recomendavam também: era alcançadíssimo de inteligência, e granjeara entre os seus condiscípulos da Universidade o epíteto de "brocas", com que ainda hoje os seus descendentes em Vila-Real são conhecidos. Bem ou mal derivado, o epíteto Brocas vem de broa. Entenderam os acadêmicos que a rudeza do seu condiscípulo procedia de muito pão de milho que ele digeria na sua terra.</p>
+<p><img src="filme.jpg" width="294" height="171" alt="Filme"></p>
+<p>Domingos Botelho devia ter uma vocação qualquer, e tinha: era excelente flautista; foi a primeira flauta do seu tempo; e a tocar flauta se sustentou dois anos em Coimbra, durante os quais seu pai lhe suspendeu as mesadas, porque os rendimentos da casa não bastavam a livrar outro filho de um crime de morte.</p>
+<p>Formara-se Domingos Botelho em 1767, e fora a Lisboa ler no Desembargo do Paço, iniciação banal dos que aspiravam à carreira da magistratura. Já Fernão Botelho, pai do bacharel, fora bem aceite em Lisboa, e mormente ao duque de Aveiro, cuja estima lhe teve a cabeça em risco, na tentativa regicida de 1758. O provinciano saiu das masmorras da Junqueira ilibado da infamante nódoa, e até benquisto do conde de Oeiras, porque tomara parte na prova que este fizera do primor de sua geneologia sobre a dos Pintos Coelhos, do Bomjardim do Porto: pleito ridículo, mas estrondoso, movido pela recusa que o fidalgo portuense fizera de sua filha ao filho de Sebastião José de Carvalho.</p>
+</div>
+
+</body>
+</html>
