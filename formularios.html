@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Formulários</title>
+<style type="text/css">
+
+#botao_especial {
+	background-color: rgb(255,0,0);
+	width: 50px;
+	height: 50px;
+	color: #fff;
+	font-size: 10px;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+}
+	
+#botao_especial:hover {
+		background-color:blue;
+
+	}	
+
+</style>
+</head>
+<body>
+<form id="formregisto" name="formregisto" method="post" action="processa.php">
+<p><label for="nome">Nome:</label> <input type="text" id="nome" name="nome" required autofocus>*</p>
+<p><label for="morada">Morada:</label> <input type="text" id="morada" name="morada" required>*</p>
+<p><label for="telefone">Telefone:</label> <input type="tel" id="telefone" name="telefone"></p>
+
+<p><label for="cp">Código Postal:</label> <input type="text" id="cp" name="cp" maxlength="8" pattern="[0-9]{4}-[0-9]{3}|(\d{4})"></p>
+<p><label for="email">Email:</label> <input type="email" id="email" name="email"></p>
+<p><label for="site">Site:</label> <input type="url" id="site" name="site"></p>
+<p><label for="date">Data de Nascimento:</label> <input type="date" id="datanasc" name="date"></p>
+<p><label for="cor">Cor favorita:</label> <input type="color" id="cor" name="cor"></p>
+<p><label for="idade">Idade:</label> <input type="number" id="idade" name="idade" min="0" max="120"></p>
+<p><label for="html">Conhecimentos de HTML:</label> <input type="range" id="html" name="html" min="0" max="5" onchange="valorhtml.value=this.value"><output id="valorhtml"></output></p>
+
+<label for="browser_favorito">Qual é o seu browser favorito?</label>
+<input id="browser_favorito" type="text" value="" list="browser" />
+<datalist id="browser">
+<option value="Safari">Safari</option>
+<option value="Chrome">Google Chrome</option>
+<option value="IE">Microsoft Internet Explorer</option>
+<option value="Firefox">Mozilla Firefox</option>
+<option value="Opera">Opera</option>
+</datalist>
+
+<!--<select id="browser_favorito" name="browser_favorito">
+<option value="Safari">Safari</option>
+<option value="Chrome">Google Chrome</option>
+<option value="IE">Microsoft Internet Explorer</option>
+<option value="Firefox">Mozilla Firefox</option>
+<option value="Opera">Opera</option>
+</select>-->
+
+<p><label for="progresso">Carregamento de ficheiro</label> <progress id="progresso" name="progresso" min="0" max="100" value="20"></progress></p>
+<p><label for="espaco_disco">Espaço em disco</label> <meter id="espaco_disco" name="espaco_disco" min="0" max="100" value="50"></meter></p>
+<p><label for="pesquisa">Pesquisa:</label> <input type="search" id="pesquisa" name="pesquisa"></p>
+
+
+<p><input type="submit" id="btsubmit" name="btsubmit" value="Efectuar registo">
+<!--<input type="image" id="btsubmit2" name="btsubmit2" src="images/footer_submit_button.gif">
+<button><img src= "images/footer_submit_button.gif"><br>Ricardo<br>Coimbra</button>
+<button style="background-color: red; width: 50px; height: 50px; color: #fff; font-style: 10px; border: none; border-radius: 50%; cursor: pointer">Submit</button>
+<button id="botao_especial">submit</button>
+</p>-->
+</form>
+<p>&hearts; &#x2665; &#9829; </p>
+
+</body>
+</html>
